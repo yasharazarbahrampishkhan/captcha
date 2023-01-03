@@ -1,0 +1,38 @@
+{
+    "name": "azarbahram/captcha",
+    "description": "testing farsi captcha",
+    "authors": [
+        {
+            "name": "yashar azarbahram",
+            "email": "yashar_azarbahram@yahoo.com"
+        }
+    ],
+    
+    "keywords": [
+        "Laravel",
+        "farsi captcha"
+    ],
+    
+    "require": {
+        "illuminate/support": "^6|^7|^8|^9",
+        "php": ">=7.2"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Azarbahram\\Captcha\\AzbrProvider"
+            ],
+            "aliases": {
+                "Azbr": "Azarbahram\\Captcha\\Facades\\Azbr"
+            }
+        }
+    },
+
+    "autoload":{
+        "psr-4" : {
+            "Azarbahram\\Captcha\\" : "src/"
+        }
+    }
+
+}
