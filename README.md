@@ -71,7 +71,8 @@ Route::get('/', function () {
 
 </p>
 
-```Azbr::Captcha();
+```
+Azbr::Captcha();
 ```
 
 <p style="text-align:right;direction:rtl;">
