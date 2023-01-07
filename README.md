@@ -41,29 +41,27 @@ Route::get('/', function () {
 
 Route::get('/', function () {
 
-    Azbr::Captcha();   
+  $img = Azbr::Captcha();   
    
 });
 
 <p style="text-align:right;direction:rtl;">
 
-3:اگر مقدار برابر 3 قرار دهید عکس های کپچا در هارد قرار نمیگیرند و به صورت base64 بر میگردند
-
-تفاوت دو حالت 2 و 3 در آن است که در حالت 2 عکس کپچا در داخل یک متغیر base64_encode شده به کاربر برگردانده می شود
-
-ولی در حالت 3 عکس کپچا مستقیما return می شود
+حالا باید $img  را در تگ img  قرار دهید 
 
 </p>
 
+<img src="data:image/png;base64,<?= $img ?>"/>
 
-Route::get('/', function () {
- 
-    $image = Azbr::Captcha();
-    header("Content-type: image/png");
-    echo base64_decode($image);
 
-   
-});
+
+<p style="text-align:right;direction:rtl;">
+
+3: در این حالت عکس کپچا مستقیم بر گردانده میشود
+
+</p>
+
+Azbr::Captcha();
 
 
 <p style="text-align:right;direction:rtl;">
