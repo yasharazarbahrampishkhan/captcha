@@ -51,7 +51,7 @@ Route::get('/', function () {
 
 </p>
 
-<img src="data:image/png;base64,<?= $img ?>"/>
+<pre><img src="data:image/png;base64,<?= $img ?>"/></pre>
 
 
 
