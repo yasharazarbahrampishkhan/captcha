@@ -1,6 +1,10 @@
 <p style="text-align:right;direction:rtl;">
 پس از نصب پکیج کد زیر را وارد کنید :
+
+```
 php artisan vendor:publish --force
+```
+
 </p>
 
 <p style="text-align:right;direction:rtl;">
@@ -22,11 +26,13 @@ php artisan vendor:publish --force
 برای استفاده از این حالت :
 </p>
 
+```
 Route::get('/', function () {
  
   $image = Azbr::Captcha();
 
 });
+```
 
 <p style="text-align:right;direction:rtl;">
 این فساد تنها نام عکس ساخته شده را بر میگرداند برای استفاده از عکس کپچا ساخته شده در فرم خود باید مسیری که برای ذخیر عکس در فایل کانفیگ config/azrbcaptcha در نظر گرفته اید را به صورت prefix به نام آن اضافه کنید
@@ -39,11 +45,13 @@ Route::get('/', function () {
 
 </p>
 
+```
 Route::get('/', function () {
 
   $img = Azbr::Captcha();   
    
 });
+```
 
 <p style="text-align:right;direction:rtl;">
 
@@ -51,7 +59,9 @@ Route::get('/', function () {
 
 </p>
 
-<pre><img src="data:image/png;base64,<?= $img ?>"/></pre>
+```
+<img src="data:image/png;base64,<?= $img ?>"/>
+```
 
 
 
@@ -60,9 +70,9 @@ Route::get('/', function () {
 3: در این حالت عکس کپچا مستقیم بر گردانده میشود
 
 </p>
-
+```
 Azbr::Captcha();
-
+```
 
 <p style="text-align:right;direction:rtl;">
 بعد از تولید هر عکس کپچا یک session با نام captcha برای شما set میشود که مقدار عددی عکس کپچای ساخته شده درون آن قرار میگیرد
