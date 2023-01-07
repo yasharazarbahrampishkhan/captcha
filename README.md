@@ -70,8 +70,8 @@ Route::get('/', function () {
 3: در این حالت عکس کپچا مستقیم بر گردانده میشود
 
 </p>
-```
-Azbr::Captcha();
+
+```Azbr::Captcha();
 ```
 
 <p style="text-align:right;direction:rtl;">
