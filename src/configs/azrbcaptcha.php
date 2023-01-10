@@ -13,6 +13,7 @@ return [
       'font_address' => "fonts/BZiba.ttf" ,
       'line_numbers' => 5,
       'pixel_numbers' => 2000,
-      'saving_dir' => 2
+      'saving_dir' => 2,
+	 'rtl' => 1,//اگر کپچا برعکس بود این پارامتر را به 2 تغییر دهید
 
 ];

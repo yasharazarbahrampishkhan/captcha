@@ -4,6 +4,7 @@ namespace Azarbahram\Captcha;
 
 use Azarbahram\Captcha\Helpers\Lib\FarsiGD;
 use Azarbahram\Captcha\Helpers\Number2Word;
+use Azarbahram\Captcha\Helpers\Lib\FarsiGDltr;
 
 
 class Azbrcaptcha {
@@ -42,8 +43,13 @@ class Azbrcaptcha {
         $time=round(microtime(true)*1000);
 
         $Number2Word = new Number2Word;
-        $gd = new FarsiGD();
 
+        if(config('azrbcaptcha.rtl') == 1){
+            $gd = new FarsiGDltr();
+        }else{
+            $gd = new FarsiGD();
+        }
+        
         $number = rand(1000,9999);
         
         $word = $Number2Word->numberToWords($number);
