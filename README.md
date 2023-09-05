@@ -74,13 +74,12 @@ Route::get('/', function () {
 ```
 Azbr::Captcha();
 ```
-<p></p>
-<p></p>
 
-<p style="text-align:right;direction:rtl;">***
+
+<p style="text-align:right;direction:rtl;margin-top:40px;">***
 بعد از تولید هر عکس کپچا یک session با نام captcha برای شما set میشود که مقدار عددی عکس کپچای ساخته شده درون آن قرار میگیرد
 </p>
-<p></p>
-<p style="text-align:right;direction:rtl;">***
-همکن است بعد از انتقال کپچا به سیستم عامل لینوکس حروف کپیچا برعکس نمایش داده شوند برای حل این مشکل کافی است در فایل کانفیک متغیر rtl را تغییر دهید
+
+<p style="text-align:right;direction:rtl;margin-top:20px;">***
+ممکن است بعد از انتقال کپچا به سیستم عامل لینوکس حروف کپیچا برعکس نمایش داده شوند برای حل این مشکل کافی است در فایل کانفیک متغیم rtl را تغییر دهید
 </p>
