@@ -75,7 +75,7 @@ Route::get('/', function () {
 Azbr::Captcha();
 ```
 
-<p style="text-align:right;direction:rtl;">
+<p style="text-align:right;direction:rtl;">***
 بعد از تولید هر عکس کپچا یک session با نام captcha برای شما set میشود که مقدار عددی عکس کپچای ساخته شده درون آن قرار میگیرد
 </p>
 
