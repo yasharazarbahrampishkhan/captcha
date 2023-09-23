@@ -3,7 +3,7 @@
 اگر در هنگام نصب به  error زیر برخوردید نصب پکیج را به این صورت انجام دهید
 
 ```
- composer require cr/hashcli:dev-master
+composer require azarbahram/captcha:dev-master
 ```
 
 </p>
