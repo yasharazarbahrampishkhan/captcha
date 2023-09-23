@@ -1,9 +1,11 @@
 
 <p style="text-align:right;direction:rtl;">
 اگر در هنگام نصب به  error زیر برخوردید نصب پکیج را به این صورت انجام دهید
+
 ```
  composer require cr/hashcli:dev-master
 ```
+
 </p>
  <p>
  Could not find a version of package azarbahram/captcha matching your minimu  
