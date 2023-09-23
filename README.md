@@ -2,14 +2,16 @@
 <p style="text-align:right;direction:rtl;">
 اگر در هنگام نصب به  error زیر برخوردید نصب پکیج را به این صورت انجام دهید
 </p>
+ <p>
+ Could not find a version of package azarbahram/captcha matching your minimu  
+  m-stability (stable). Require it with an explicit version constraint allowi  
+  ng its desired stability.
+</p>
 
 ‍‍‍‍‍‍```
  composer require cr/hashcli:dev-master
 ```
 
- Could not find a version of package azarbahram/captcha matching your minimu  
-  m-stability (stable). Require it with an explicit version constraint allowi  
-  ng its desired stability.
 
 
 <p style="text-align:right;direction:rtl;">
